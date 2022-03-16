@@ -21,79 +21,79 @@ public class RedondoTest {
     }
     
     /**
-     * Test of establecerX method, of class Redondo.
+     * Test of setCoordenadaX method, of class Redondo.
      */
     @Test
-    public void testEstablecerX() {
+    public void testSetCoordenadaX() {
         System.out.println("establecerX");
         int valorX = 0;
         Redondo instance = new Redondo();
-        instance.establecerX(valorX);
+        instance.setCoordenadaX(valorX);
     }
 
     /**
-     * Test of obterX method, of class Redondo.
+     * Test of getCoordenadaX method, of class Redondo.
      */
     @Test
     public void testObterX() {
         System.out.println("obterX");
         Redondo instance = new Redondo(0,0,0.1);
         int expResult = 0;
-        int result = instance.obterX();
+        int result = instance.getCoordenadaX();
         assertEquals(expResult, result);
     }
 
     /**
-     * Test of establecerY method, of class Redondo.
+     * Test of setCoordenadaY method, of class Redondo.
      */
     @Test
-    public void testEstablecerY() {
+    public void testSetCoordenadaY() {
         System.out.println("establecerY");
         int valorY = 0;
         Redondo instance = new Redondo();
-        instance.establecerY(valorY);
+        instance.setCoordenadaY(valorY);
     }
 
     /**
-     * Test of obterY method, of class Redondo.
+     * Test of getCoordenadaY method, of class Redondo.
      */
     @Test
-    public void testObterY() {
+    public void testGetCoordenadaY() {
         System.out.println("obterY");
         Redondo instance = new Redondo(0,0,0.1);
         int expResult = 0;
-        int result = instance.obterY();
+        int result = instance.getCoordenadaY();
         assertEquals(expResult, result);
     }
 
     /**
-     * Test of establecerRadio method, of class Redondo.
+     * Test of setRadio method, of class Redondo.
      */
     @Test
     public void testEstablecerRadio() {
         System.out.println("establecerRadio");
         Redondo instance = new Redondo();
-        instance.establecerRadio(0.0);
-        instance.establecerRadio(0.1);
-        instance.establecerRadio(-0.1);
+        instance.setRadio(0.0);
+        instance.setRadio(0.1);
+        instance.setRadio(-0.1);
     }
 
     /**
-     * Test of obterRadio method, of class Redondo.
+     * Test of getRadio method, of class Redondo.
      */
     @Test
     public void testObterRadio() {
         System.out.println("obterRadio");
         Redondo instance = new Redondo(0,0,0.1);
-        double result = instance.obterRadio();
+        double result = instance.getRadio();
         assertEquals(0.1, result,0);
 
-        instance.establecerRadio(0.1);
-        result= instance.obterRadio();
+        instance.setRadio(0.1);
+        result= instance.getRadio();
         assertEquals(0.1, result,0);
 
-        instance.establecerRadio(-0.1);
-        result= instance.obterRadio();
+        instance.setRadio(-0.1);
+        result= instance.getRadio();
         assertEquals(0.0, result,0);
     }
 
@@ -139,11 +139,11 @@ public class RedondoTest {
     public void testTrasladarCentro() {
         System.out.println("trasladarCentro");
         Redondo instance = new Redondo();
-        int resultx=instance.obterX();
-        int resulty=instance.obterY();
+        int resultx=instance.getCoordenadaX();
+        int resulty=instance.getCoordenadaY();
         instance.trasladarCentro(5, 6);
-        int resultnx = instance.obterX();
-        int resultny = instance.obterY();
+        int resultnx = instance.getCoordenadaX();
+        int resultny = instance.getCoordenadaY();
         assertEquals(resultx+5, resultnx);
         assertEquals(resulty+6, resultny);
     }
