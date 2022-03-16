@@ -53,7 +53,7 @@ public class Redondo {
         return Math.PI * obterDiametro();
     }
 
-    public double obterArea() {
+    public double obterSuperficie() {
         return Math.PI * radio * radio;
     }
 

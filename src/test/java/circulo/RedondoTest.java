@@ -121,14 +121,14 @@ public class RedondoTest {
     }
 
     /**
-     * Test of obterArea method, of class Redondo.
+     * Test of obterSuperficie method, of class Redondo.
      */
     @Test
-    public void testObterArea() {
+    public void testObterSuperficie() {
         System.out.println("obterArea");
         Redondo instance = new Redondo(0,0,0.1);
         double expResult = 0.0314159;
-        double result = instance.obterArea();
+        double result = instance.obterSuperficie();
         assertEquals(expResult, result,1e-6);
     }
 
