@@ -1,20 +1,20 @@
 package circulo;
 
 /**
- * Probas de refactorización en NetBeans coa clase Circulo
+ * Probas de refactorización en NetBeans coa clase Redondo
  * @author profesor
  */
-public class Circulo {
+public class Redondo {
     public static final double MINIMO = 0.0;
 
     private int x;
     private int y;
     private double radio;
 
-    public Circulo() {
+    public Redondo() {
     }
 
-    public Circulo(int valorX, int valorY, double valorRadio) {
+    public Redondo(int valorX, int valorY, double valorRadio) {
         x = valorX;
         y = valorY;
         establecerRadio(valorRadio);

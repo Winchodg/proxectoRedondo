@@ -3,12 +3,12 @@ package circulo;
 import java.text.DecimalFormat;
 
 /**
- * Pruebas de refactorización en NetBeans con la clase Circulo
+ * Pruebas de refactorización en NetBeans con la clase Redondo
  * @author profesor
  */
 public class Main {
     public static void main(String[] args) {
-        Circulo circulo = new Circulo(37,43,2.5);
+        Redondo circulo = new Redondo(37,43,2.5);
         String saida =
                 "A coordenada X é "+circulo.obterX()+
                 "\nA coordenada Y é "+circulo.obterY()+
